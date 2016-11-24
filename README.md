@@ -1,7 +1,4 @@
-# A .NET wrapper for the Google Maps API
-
-This project incorporates code from [Google Maps API for .Net](https://github.com/ericnewton76/gmaps-api-net), by Luis Farzati, Eric Newton et al.
-
+# A .NET wrapper for the Google Maps Geocoding API
 
 ## Usage
 
@@ -65,3 +62,8 @@ var creds = new Credentials
 ```
 
 It is possible to use some parts of the Google Maps API without authorisation. If you wish to do so, then you can use the static property `Credentials.None`.
+
+# Credits
+
+This project incorporates code from [Google Maps API for .Net](https://github.com/ericnewton76/gmaps-api-net), by Luis Farzati, Eric Newton et al.
+
