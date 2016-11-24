@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Stony.GoogleMaps.Geocoding</id>
+    <version>0.0.1</version>
+    <title />
+    <authors>Richard Thombs</authors>
+    <owners>Richard Thombs</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>http://github.com/stonyuk/Stony.GoogleMaps</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET wrapper for the Google Maps Geocoding API</description>
+    <tags>google geocoding</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="4.5" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Debug\Stony.GoogleMaps.dll" target="lib" />
+    <file src="bin\Debug\Stony.GoogleMaps.pdb" target="lib" />
+    <file src="bin\Debug\Stony.GoogleMaps.Geocoding.dll" target="lib" />
+    <file src="bin\Debug\Stony.GoogleMaps.Geocoding.pdb" target="lib" />
+  </files>
+</package>
