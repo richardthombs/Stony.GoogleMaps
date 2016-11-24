@@ -30,6 +30,8 @@ namespace Stony.GoogleMaps.Geocoding
 
 		public string Language { get; set; }
 
+		public bool NewForwardGeocoder { get; set; }
+
 		public static implicit operator GeocodingRequest(string address)
 		{
 			return new GeocodingRequest { Address = address };

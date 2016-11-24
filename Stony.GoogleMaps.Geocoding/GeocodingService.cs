@@ -41,6 +41,7 @@ namespace Stony.GoogleMaps.Geocoding
 			query.AddParameter("bounds", request.Bounds);
 			query.AddParameter("region", request.Region);
 			query.AddParameter("language", request.Language);
+			if (request.NewForwardGeocoder) query.AddParameter("new_forward_geocoder", "true");
 
 			var uri = new Uri("https://maps.googleapis.com/maps/api/geocode/json?" + String.Join("&", query));
 
