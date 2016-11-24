@@ -43,3 +43,25 @@ When run, this will produce:
 ```txt
 Geocoded "23411 Summerfield, Aliso Viejo" as "23411 Summerfield, Aliso Viejo, CA 92656, USA" at (-117.7207, 33.5772)
 ```
+
+## Authorisation
+
+The `GeocodingService` class must be constructed using a `Credentials` instance which represents your Google Maps authorisation credentials.
+
+If you have a Google Maps API key, then construct a `Credentials` instance like this:
+
+```c#
+var creds = new Credentials { ApiKey = "YOUR_API_KEY" };
+```
+
+If you have a Google Maps Premium account and want to use your client ID and private key:
+
+```c#
+var creds = new Credentials
+{
+	ClientId = "YOUR_CLIENT_ID",
+	PrivateKey = "YOUR_PRIVATE_KEY"
+};
+```
+
+It is possible to use some parts of the Google Maps API without authorisation. If you wish to do so, then you can use the static property `Credentials.None`.
