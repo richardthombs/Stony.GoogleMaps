@@ -1,0 +1,13 @@
+version: '0.0.{build}'
+
+before_build:
+  - nuget restore
+
+after_test:
+  - nuget pack Stony.GoogleMaps.Geocoding\Stony.GoogleMaps.Geocoding.nuspec -properties version=%APPVEYOR_BUILD_VERSION%
+
+artifacts:
+  - path: '*.nupkg'
+
+assembly_info:
+  patch: true
