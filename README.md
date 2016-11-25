@@ -1,4 +1,5 @@
 # A .NET wrapper for the Google Maps Geocoding API
+![master branch build status](https://ci.appveyor.com/api/projects/status/at6eyb00ipg1fvm1/branch/master?svg=true)
 
 ## Usage
 
