@@ -1,5 +1,6 @@
 # A .NET wrapper for the Google Maps Geocoding API
-![master branch build status](https://ci.appveyor.com/api/projects/status/at6eyb00ipg1fvm1/branch/master?svg=true)
+![Build status](https://ci.appveyor.com/api/projects/status/at6eyb00ipg1fvm1/branch/master?svg=true)
+[![NuGet status](https://img.shields.io/nuget/v/Stony.GoogleMaps.Geocoding.svg)](https://www.nuget.org/packages/Stony.GoogleMaps.Geocoding)
 
 ## Usage
 
