@@ -3,11 +3,11 @@
   <metadata>
     <id>Stony.GoogleMaps.Geocoding</id>
     <version>$version$</version>
-    <title />
+    <title>Google Maps Geocoding</title>
     <authors>Richard Thombs</authors>
     <owners>Richard Thombs</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <projectUrl>http://github.com/stonyuk/Stony.GoogleMaps</projectUrl>
+    <projectUrl>http://github.com/richardthombs/Stony.GoogleMaps</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.NET wrapper for the Google Maps Geocoding API</description>
     <tags>google geocoding</tags>
