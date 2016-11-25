@@ -11,3 +11,11 @@ artifacts:
 
 assembly_info:
   patch: true
+
+deploy:
+  - provider: NuGet
+    name: nuget.org
+    api_key:
+      secure: K5gawsVibF7f9rs+VEbdU9mjwI7bv8ollvZ14gFGx+FBoq8MIAPX2UNnWLcogiDp
+    on:
+      branch: master
