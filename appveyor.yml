@@ -1,16 +1,18 @@
-version: '0.0.{build}'
+install:
+  - choco install gitversion.portable -pre -y
 
 before_build:
   - nuget restore
+  - ps: gitversion /l console /output buildserver /updateAssemblyInfo
 
 after_test:
-  - nuget pack Stony.GoogleMaps.Geocoding\Stony.GoogleMaps.Geocoding.nuspec -properties version=%APPVEYOR_BUILD_VERSION%
+  - nuget pack Stony.GoogleMaps.Geocoding\Stony.GoogleMaps.Geocoding.nuspec -version "%GitVersion_NuGetVersion%"
 
 artifacts:
   - path: '*.nupkg'
 
 assembly_info:
-  patch: true
+  patch: false
 
 deploy:
   - provider: NuGet
@@ -19,3 +21,10 @@ deploy:
       secure: K5gawsVibF7f9rs+VEbdU9mjwI7bv8ollvZ14gFGx+FBoq8MIAPX2UNnWLcogiDp
     on:
       branch: master
+      appveyor_repo_tag: true
+
+  - provider: NuGet
+    name: myget.org
+    server: https://www.myget.org/F/richardthombs/api/v2/package
+    api_key:
+      secure: myRVmiM63ShAVBMtUXhHmOueUUWh7X1YJJ931kSnMWXkrevwJcur4k2Vdfpchvw1
