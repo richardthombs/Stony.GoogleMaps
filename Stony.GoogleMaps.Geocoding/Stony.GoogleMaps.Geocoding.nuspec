@@ -3,13 +3,12 @@
   <metadata>
     <id>Stony.GoogleMaps.Geocoding</id>
     <version>$version$</version>
-    <title>Google Maps Geocoding</title>
     <authors>Richard Thombs</authors>
     <owners>Richard Thombs</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>http://github.com/richardthombs/Stony.GoogleMaps</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>.NET wrapper for the Google Maps Geocoding API</description>
+    <description>A .NET wrapper for the Google Maps Geocoding API</description>
     <tags>google geocoding</tags>
     <dependencies>
       <dependency id="Newtonsoft.Json" version="4.5.1" />
