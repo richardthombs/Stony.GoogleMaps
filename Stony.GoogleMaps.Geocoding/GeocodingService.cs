@@ -48,6 +48,7 @@ namespace Stony.GoogleMaps.Geocoding
 			uri = uri.AddCredentials(credentials);
 
 			var client = new WebClient();
+			client.Encoding = System.Text.Encoding.UTF8;
 			var json = client.DownloadString(uri);
 
 			using (var stringReader = new StringReader(json))
