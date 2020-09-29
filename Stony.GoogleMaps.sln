@@ -1,52 +1,76 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stony.GoogleMaps.Geocoding", "Stony.GoogleMaps.Geocoding\Stony.GoogleMaps.Geocoding.csproj", "{E71AC8AE-9D63-4FEF-889E-16E0C0D444AA}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stony.GoogleMaps", "Stony.GoogleMaps\Stony.GoogleMaps.csproj", "{7A03F9F4-236C-4C4E-9751-B0D887FB2499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stony.GoogleMaps", "Stony.GoogleMaps\Stony.GoogleMaps.csproj", "{E01FCAD2-3344-400D-96E1-9F2372930F13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stony.GoogleMaps.Geocoding", "Stony.GoogleMaps.Geocoding\Stony.GoogleMaps.Geocoding.csproj", "{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stony.GoogleMaps.Geocoding.Tests", "Stony.GoogleMaps.Geocoding.Tests\Stony.GoogleMaps.Geocoding.Tests.csproj", "{B4167A5F-7649-48C5-A1E1-2D3DCAEECEC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stony.GoogleMaps.Tests", "Stony.GoogleMaps.Tests\Stony.GoogleMaps.Tests.csproj", "{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{203ABA70-9250-4F95-9981-9C7523D416E5}"
-	ProjectSection(SolutionItems) = preProject
-		appveyor.yml = appveyor.yml
-		README.md = README.md
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stony.GoogleMaps.Tests", "Stony.GoogleMaps.Tests\Stony.GoogleMaps.Tests.csproj", "{88AA24C5-68B1-42E7-A751-89147F9F66B0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geocoding", "Examples\Geocoding\Geocoding.csproj", "{40FE3064-137B-444C-9B43-8D96BA88EB28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stony.GoogleMaps.Geocoding.Tests", "Stony.GoogleMaps.Geocoding.Tests\Stony.GoogleMaps.Geocoding.Tests.csproj", "{790B1751-8772-4785-BA75-6F8D19959FDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E71AC8AE-9D63-4FEF-889E-16E0C0D444AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E71AC8AE-9D63-4FEF-889E-16E0C0D444AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E71AC8AE-9D63-4FEF-889E-16E0C0D444AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E71AC8AE-9D63-4FEF-889E-16E0C0D444AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E01FCAD2-3344-400D-96E1-9F2372930F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E01FCAD2-3344-400D-96E1-9F2372930F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E01FCAD2-3344-400D-96E1-9F2372930F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E01FCAD2-3344-400D-96E1-9F2372930F13}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B4167A5F-7649-48C5-A1E1-2D3DCAEECEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4167A5F-7649-48C5-A1E1-2D3DCAEECEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4167A5F-7649-48C5-A1E1-2D3DCAEECEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4167A5F-7649-48C5-A1E1-2D3DCAEECEC6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{88AA24C5-68B1-42E7-A751-89147F9F66B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88AA24C5-68B1-42E7-A751-89147F9F66B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88AA24C5-68B1-42E7-A751-89147F9F66B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88AA24C5-68B1-42E7-A751-89147F9F66B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40FE3064-137B-444C-9B43-8D96BA88EB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40FE3064-137B-444C-9B43-8D96BA88EB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40FE3064-137B-444C-9B43-8D96BA88EB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40FE3064-137B-444C-9B43-8D96BA88EB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Debug|x64.Build.0 = Debug|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Debug|x86.Build.0 = Debug|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Release|x64.ActiveCfg = Release|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Release|x64.Build.0 = Release|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Release|x86.ActiveCfg = Release|Any CPU
+		{7A03F9F4-236C-4C4E-9751-B0D887FB2499}.Release|x86.Build.0 = Release|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Debug|x64.Build.0 = Debug|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Debug|x86.Build.0 = Debug|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Release|x64.ActiveCfg = Release|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Release|x64.Build.0 = Release|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Release|x86.ActiveCfg = Release|Any CPU
+		{4A7B68C8-C611-4B16-8E1C-07507A9FB18E}.Release|x86.Build.0 = Release|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Debug|x64.Build.0 = Debug|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Debug|x86.Build.0 = Debug|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Release|x64.ActiveCfg = Release|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Release|x64.Build.0 = Release|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Release|x86.ActiveCfg = Release|Any CPU
+		{3974E5F8-E50A-4FE5-BF31-FA3972907C4A}.Release|x86.Build.0 = Release|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Debug|x64.Build.0 = Debug|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Debug|x86.Build.0 = Debug|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Release|x64.ActiveCfg = Release|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Release|x64.Build.0 = Release|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Release|x86.ActiveCfg = Release|Any CPU
+		{790B1751-8772-4785-BA75-6F8D19959FDC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
